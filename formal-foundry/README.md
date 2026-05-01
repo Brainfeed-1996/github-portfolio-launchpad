@@ -1,30 +1,55 @@
 # Formal Foundry
 
-Program verification and correctness tooling project for contracts, invariants, model checking, and spec-driven development.
+Program correctness and verification platform for specifications, invariants, bounded checking, counterexample reporting, and CI-integrated assurance workflows.
 
-## Positioning
+Formal Foundry is a prestige-oriented engineering project designed to demonstrate rare depth in software correctness. It treats verification not as an academic side note, but as a practical engineering capability for building systems that can justify their behavior against declared rules and safety properties.
 
-Formal Foundry is a rare and prestigious repo idea. It signals precision, rigor, and advanced engineering maturity.
+---
 
-## Differentiation
+## Why this project matters
 
-- highly distinct from all other repos
-- pushes the portfolio toward formal methods, static guarantees, and trustworthy systems
-- especially valuable for elite infra, finance, safety-critical, and research-adjacent teams
+Most software projects rely on tests alone. Tests are useful, but they do not fully answer questions like:
+
+- what must always be true?
+- what illegal state transitions are impossible?
+- what counterexample proves a broken assumption?
+- how can a specification become part of day-to-day engineering workflow?
+
+Formal Foundry exists to bring invariants and specifications closer to practical software engineering.
+
+## What this project demonstrates
+
+- formal reasoning mindset
+- specification design
+- state exploration and verification tooling
+- counterexample generation
+- correctness-oriented CI integration
+- communication of guarantees and limits
 
 ## Core capabilities
 
-- specification language or schema
-- invariant definition and checking
-- symbolic or bounded exploration
-- proof artifact or counterexample reporting
+- specification DSL or schema model
+- invariant declaration and validation
+- bounded exploration or symbolic checking
+- readable proof failures and counterexamples
 - CI integration for correctness gates
+- model artifact export for review and debugging
+
+## Why it stands out in a portfolio
+
+Very few engineers have a serious formal-methods-flavored repository that is both readable and product-minded. That makes this project disproportionately strong in selective interview loops.
 
 ## Suggested stack
 
-- Rust, OCaml, Haskell, or Python depending on scope
-- optional SMT integration
+- OCaml, Haskell, Rust, or Python with SMT integration
+- TypeScript or static docs for visualization of results
 
-## High-ROI signal
+## Documentation
 
-Exceptional upside for very selective employers because few candidates build this kind of thing well.
+- `docs/architecture.md`
+- `docs/roadmap.md`
+- `docs/tradeoffs.md`
+
+## License
+
+Apache-2.0

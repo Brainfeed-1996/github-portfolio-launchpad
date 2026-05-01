@@ -1,36 +1,58 @@
 # Packet Weaver
 
-Networking and transport systems project for reliable delivery, congestion handling, multiplexed streams, and degraded-network simulation.
+Networking and transport systems project focused on reliable delivery, retransmission, ordering, stream multiplexing, and degraded-network simulation.
+
+Packet Weaver is a systems-oriented networking project built to demonstrate protocol design thinking, latency and throughput trade-offs, failure handling, and the mechanics of transport behavior under real-world network degradation.
+
+---
 
 ## Why this project matters
 
-Packet Weaver shows command of protocol design, latency trade-offs, failure handling, and network systems behavior, all of which stand out strongly in selective systems interviews.
+Reliable communication is easy to take for granted until a system must operate under:
+
+- packet loss
+- reordering
+- duplication
+- latency spikes
+- bandwidth pressure
+- shared transport contention
+
+Packet Weaver exists to make those concerns explicit and engineerable.
+
+## What this project demonstrates
+
+- network protocol design
+- transport reliability semantics
+- congestion and flow-control thinking
+- simulation and benchmarking discipline
+- visibility into packet-level behavior
+- performance-sensitive state management
 
 ## Core capabilities
 
 - custom transport over UDP or simulated substrate
-- retransmission and ordering logic
-- flow or congestion control experiments
-- stream multiplexing
-- observability and packet tracing
+- ordering and retransmission logic
+- multiplexed logical streams
 - network degradation simulator
+- delivery, latency, and throughput metrics
+- packet tracing and debugging surfaces
+
+## Why it stands out in a portfolio
+
+Networking projects are relatively rare and immediately distinctive. This one creates strong signal for systems, infra, real-time, backend performance, and protocol-heavy engineering roles.
 
 ## Suggested stack
 
-- Rust, Go, or C
-- benchmark and simulation tooling
+- Rust, C, or Go
+- simulation harness and benchmark suite
+- optional visual trace explorer
 
-## Repo structure
+## Documentation
 
-```text
-packet-weaver/
-  transport/
-  simulator/
-  cli/
-  bench/
-  docs/
-```
+- `docs/architecture.md`
+- `docs/roadmap.md`
+- `docs/tradeoffs.md`
 
-## High-ROI signal
+## License
 
-Excellent for networking, infra, systems, and performance-sensitive engineering roles.
+Apache-2.0
