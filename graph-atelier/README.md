@@ -1,31 +1,60 @@
 # Graph Atelier
 
-High-performance graph analytics and knowledge inference platform for entity resolution, recommendation, path analysis, and graph-native applications.
+High-performance graph infrastructure and analytics platform for entity resolution, path analysis, recommendation, knowledge modeling, and graph-native applications.
 
-## Positioning
+Graph Atelier is a portfolio-grade graph systems project designed to demonstrate deep engineering around relationship-heavy data, graph traversals, update propagation, and domain modeling for applications where connectivity matters as much as the entities themselves.
 
-Graph Atelier demonstrates advanced data structures, algorithmic thinking, and infrastructure design around graph workloads.
+---
 
-## Differentiation
+## Why this project matters
 
-- unlike Sentinel Fabric, this is general-purpose graph infrastructure, not security-specific
-- useful for search, fraud, social, recommendation, knowledge systems, and AI retrieval applications
+Many hard technical problems are not naturally tabular.
+
+They depend on:
+
+- relationships between entities
+- multi-hop reasoning
+- context-aware traversal
+- identity resolution
+- evolving neighborhoods
+- subgraph extraction and scoring
+
+Graph Atelier exists to treat graph workloads as a first-class infrastructure problem.
+
+## What this project demonstrates
+
+- graph-oriented data modeling
+- indexing and traversal design
+- entity resolution logic
+- projection and query trade-offs
+- analytical and operational graph use cases
+- reasoning-friendly platform architecture
 
 ## Core capabilities
 
-- graph storage abstraction
-- traversal and shortest-path primitives
-- subgraph extraction
-- entity resolution and merge strategies
-- streaming updates and materialized projections
-- query planner experiments
+- node and edge model with typed relationships
+- traversal and path-query primitives
+- subgraph extraction workflows
+- entity merge and split strategies
+- streaming graph updates and materialized projections
+- scoring and ranking layers for graph exploration
+
+## Why it stands out in a portfolio
+
+Graph systems are both practical and intellectually rich. This project is strong for search, fraud, knowledge systems, recommendation, platform data, and ML-adjacent infra roles.
 
 ## Suggested stack
 
-- Rust, Java, or C++ core
-- Python bindings for analysis
-- TypeScript UI for exploration
+- Rust or Java core
+- optional Python bindings for analysis
+- TypeScript UI for graph exploration
 
-## High-ROI signal
+## Documentation
 
-Strong for data infra, search, ML platform, and systems roles.
+- `docs/architecture.md`
+- `docs/roadmap.md`
+- `docs/tradeoffs.md`
+
+## License
+
+Apache-2.0

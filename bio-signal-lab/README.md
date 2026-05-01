@@ -1,30 +1,57 @@
 # Bio Signal Lab
 
-Signal processing and streaming analytics platform for physiological, sensor, and time-series data.
+Signal processing and streaming analytics platform for physiological, sensor, and time-series data, with an emphasis on reproducibility, event detection, and interactive analysis workflows.
 
-## Positioning
+Bio Signal Lab is a scientific-computing-flavored engineering project designed to show breadth beyond standard backend systems by combining streaming architecture, applied mathematics, feature extraction, and operational analysis tooling.
 
-Bio Signal Lab introduces applied math, signal processing, and real-time systems into the portfolio.
+---
 
-## Differentiation
+## Why this project matters
 
-- highly distinct from the current projects
-- showcases quantitative rigor and engineering breadth
-- useful for healthtech, wearables, robotics, and edge analytics roles
+Signal-heavy systems must often reason over:
+
+- noisy inputs
+- irregular sampling
+- temporal windows
+- filtering and segmentation
+- event detection thresholds
+- reproducible analytical pipelines
+
+Bio Signal Lab exists to turn those concerns into a structured platform rather than isolated notebooks or one-off scripts.
+
+## What this project demonstrates
+
+- time-series and signal pipeline design
+- applied quantitative engineering
+- streaming data processing
+- reproducibility and experiment discipline
+- analyst-facing tooling and annotation workflows
 
 ## Core capabilities
 
-- streaming ingestion for time-series signals
-- denoising and segmentation pipelines
-- feature extraction and event detection
-- labeling and annotation workflows
-- reproducible analysis runs
+- signal ingestion pipeline
+- denoising and segmentation steps
+- feature extraction and rolling-window computation
+- event detection workflows
+- labeling and annotation support
+- comparable analysis runs and results tracking
+
+## Why it stands out in a portfolio
+
+This project adds rare scientific and quantitative depth to the portfolio, which is useful for healthtech, edge analytics, robotics, and advanced data engineering roles.
 
 ## Suggested stack
 
-- Python, Rust, or Julia for signal pipelines
-- TypeScript for visualization and labeling tools
+- Python for analysis and experimentation
+- Rust for performance-sensitive pipeline components
+- TypeScript for visualization and review surfaces
 
-## High-ROI signal
+## Documentation
 
-Strong differentiation through scientific computing and real-time data processing.
+- `docs/architecture.md`
+- `docs/roadmap.md`
+- `docs/tradeoffs.md`
+
+## License
+
+Apache-2.0

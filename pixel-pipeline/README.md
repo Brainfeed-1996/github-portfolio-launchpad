@@ -1,46 +1,58 @@
 # Pixel Pipeline
 
-Real-time media processing and distributed rendering platform for image, video, and stream transformation workflows.
+Real-time and batch media processing platform for image, video, and stream transformation workflows, scheduling, caching, and resource-aware execution.
 
-## Positioning
+Pixel Pipeline is a performance-oriented distributed systems project built to demonstrate compute-heavy workflow design, media pipeline composition, cost/latency/quality trade-offs, and infrastructure for resource-intensive production workloads.
 
-Pixel Pipeline broadens the portfolio into high-performance media systems and distributed compute orchestration.
+---
 
-## Why it stands out
+## Why this project matters
 
-- shows competency beyond classic CRUD or web tooling
-- demonstrates performance engineering, queues, storage, and compute scheduling
-- useful for companies in media, AI infra, creator tooling, and cloud platforms
+Media systems create unusual engineering pressure because they combine:
+
+- heavy computation
+- large artifacts
+- multi-stage processing graphs
+- quality constraints
+- GPU or specialized resource scheduling
+- cost-sensitive execution decisions
+
+Pixel Pipeline exists to model that challenge as a coherent platform.
+
+## What this project demonstrates
+
+- high-throughput pipeline design
+- scheduling and worker orchestration
+- artifact caching and deduplication
+- media transformation lifecycle modeling
+- resource-aware execution planning
+- metrics for cost, latency, and output quality
 
 ## Core capabilities
 
-- asset ingestion and transcoding workflows
-- frame and segment processing pipelines
-- job scheduling and GPU-aware routing
-- artifact caching and deduplication
-- quality metrics and cost controls
+- asset ingestion and normalization
+- transcoding and transformation workflows
+- worker queue and scheduling model
+- CPU and GPU aware execution routing
+- artifact cache and reuse layer
+- pipeline monitoring and retry semantics
+
+## Why it stands out in a portfolio
+
+This project is a strong differentiator for performance engineering, cloud compute, media infrastructure, creator tooling, and distributed processing teams.
 
 ## Suggested stack
 
-- Rust, C++, or Go for the pipeline runtime
-- FFmpeg and GPU acceleration where relevant
-- TypeScript for operator surfaces
+- Rust or C++ runtime
+- FFmpeg integration and optional GPU acceleration
+- TypeScript operator surface
 
-## Repo structure
+## Documentation
 
-```text
-pixel-pipeline/
-  apps/
-    scheduler/
-    worker/
-    studio/
-  packages/
-    media-core/
-    storage-index/
-    qos-metrics/
-  docs/
-```
+- `docs/architecture.md`
+- `docs/roadmap.md`
+- `docs/tradeoffs.md`
 
-## High-ROI signal
+## License
 
-Strong signal for performance, systems, cloud, infra, and product engineering roles.
+Apache-2.0
