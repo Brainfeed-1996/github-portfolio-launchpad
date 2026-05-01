@@ -1,47 +1,68 @@
 # Compiler Garden
 
-Language tooling and compiler architecture project for parsing, semantic analysis, optimization passes, IR design, and execution backends.
+Language tooling and compiler architecture project for parsing, semantic analysis, IR design, optimization, diagnostics, and execution backends.
 
-## Positioning
+Compiler Garden is a prestige portfolio project designed to demonstrate serious engineering depth through the construction of a coherent language toolchain. It covers the path from source text to executable behavior while emphasizing clean abstractions, diagnostic quality, semantic rigor, and room for optimization experiments.
 
-Compiler Garden is a prestige project. It signals depth, rigor, and intellectual range in one shot.
+---
 
-## Why it stands out
+## Why this project matters
 
-- instantly differentiates a portfolio
-- demonstrates mastery of parsing, ASTs, type systems, optimization, and code generation
-- relevant to developer tooling, language infrastructure, AI tooling, and systems roles
+Compiler work compresses many difficult ideas into one system:
+
+- parsing and syntax design
+- AST modeling
+- scoping and type analysis
+- control-flow reasoning
+- intermediate representations
+- optimization correctness
+- execution models and diagnostics
+
+That combination makes compiler projects disproportionately valuable in selective hiring processes. They signal precision, systems thinking, abstraction ability, and technical maturity.
+
+## What this project demonstrates
+
+- language and tooling design
+- algorithmic and structural rigor
+- diagnostic and developer experience thinking
+- intermediate representation design
+- optimization pipeline design
+- VM or backend execution modeling
 
 ## Core capabilities
 
-- lexer and parser
-- AST and typed intermediate representation
-- semantic validation
+- lexer with source spans
+- parser and recoverable syntax diagnostics
+- AST and semantic analysis pipeline
+- typed IR
 - optimization passes
 - interpreter or bytecode VM
-- diagnostics and source mapping
+- source mapping and error reporting
+- language playground or REPL potential
+
+## Architecture at a glance
+
+```text
+source
+  |
+  v
+lexer -> parser -> AST -> semantic analysis -> typed IR -> optimizer -> VM/backend
+```
+
+## Why it stands out in a portfolio
+
+Few candidates build compiler-like systems well. This kind of project creates excellent interview material for language tooling, developer infrastructure, backend systems, and generalist high-bar engineering roles.
 
 ## Suggested stack
 
-- Rust, OCaml, C++, or Zig
-- optional web playground in TypeScript
+- Rust, OCaml, or C++ for the compiler core
+- TypeScript for a playground or interactive visualizer
 
-## Repo structure
+## Documentation
 
-```text
-compiler-garden/
-  crates/
-    lexer/
-    parser/
-    ir/
-    optimizer/
-    vm/
-  apps/
-    cli/
-    playground/
-  docs/
-```
+- `docs/architecture.md`
+- `docs/roadmap.md`
 
-## High-ROI signal
+## License
 
-Exceptional signal for compilers, tools, infra, language, and top-tier generalist engineering roles.
+Apache-2.0

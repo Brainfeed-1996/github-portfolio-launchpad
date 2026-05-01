@@ -1,47 +1,75 @@
 # Kernel Sentinel
 
-Cross-platform low-level observability and runtime security project centered on syscall tracing, process behavior analysis, and policy-driven enforcement.
+Cross-platform runtime telemetry and low-level security observability platform focused on process behavior, syscall tracing, and policy-driven detection.
 
-## Positioning
+Kernel Sentinel is a systems-heavy security project built to demonstrate competence in operating-system-adjacent engineering, high-volume telemetry pipelines, low-overhead event collection, and investigation-friendly trace modeling. It is intentionally positioned far below the application layer to show depth that most portfolios never reach.
 
-Kernel Sentinel shows strong systems engineering depth and comfort with operating-system internals.
+---
 
-## Why it stands out
+## Why this project matters
 
-- differentiates sharply from the existing portfolio
-- demonstrates Linux internals, eBPF or kernel-adjacent tracing, and security analytics
-- attractive for infra, security, performance, and platform roles
+Application logs are often too late, too incomplete, or too easy to bypass.
+
+Many high-value detection and observability problems require visibility into:
+
+- process lineage
+- file activity
+- network behavior
+- privilege transitions
+- unexpected execution paths
+- runtime anomalies
+
+Kernel Sentinel exists to model that problem as a performance-sensitive systems challenge rather than as a dashboard exercise.
+
+## What this project demonstrates
+
+- low-level systems engineering
+- runtime security thinking
+- event pipeline design
+- policy engine design
+- observability under overhead constraints
+- forensic and analyst workflow awareness
 
 ## Core capabilities
 
-- syscall and process telemetry capture
-- anomaly detection primitives
-- policy engine for runtime constraints
-- artifact export for forensic analysis
-- low-overhead observability pipeline
+- syscall or runtime event capture
+- process and resource lineage modeling
+- normalized trace schema
+- policy-aware filtering
+- anomaly and rule-based detection primitives
+- investigation timelines and export surfaces
+- performance and overhead benchmarking
+
+## Architecture at a glance
+
+```text
+probe layer
+   |
+   v
+collector
+   |
+   v
+normalization + correlation
+   |
+   +--> policy engine
+   +--> investigation views
+   +--> trace export and storage
+```
+
+## Why it stands out in a portfolio
+
+This project creates very strong signal for operating systems, infrastructure, runtime security, performance, and deeply technical backend roles. It shows comfort with the kinds of constraints that elite systems teams care about.
 
 ## Suggested stack
 
-- C, Rust, or Go for collectors and core runtime
-- eBPF on Linux for trace capture
-- TypeScript or Python for analysis tooling and UI
+- Rust for collectors and policy runtime
+- C or eBPF tooling for probe layer
+- TypeScript or Python for operator tools and analysis
 
-## Repo structure
+## Documentation
 
-```text
-kernel-sentinel/
-  agents/
-    ebpf-probe/
-    collector/
-  apps/
-    control-api/
-    analyst-ui/
-  packages/
-    policy-core/
-    trace-model/
-  docs/
-```
+- `docs/architecture.md`
 
-## High-ROI signal
+## License
 
-Very strong differentiation for selective companies hiring systems, security, or performance engineers.
+Apache-2.0
